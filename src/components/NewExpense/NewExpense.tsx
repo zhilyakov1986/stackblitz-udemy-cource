@@ -4,8 +4,8 @@ import './NewExpense.css';
 const NewExpense = (props) => {
   const addedExpenseItem = (addedExpense) => {
     const id = Math.random();
-    const expnseData = { ...addedExpense, id };
-    props.onAddedExpense(expnseData);
+    const expenseData = { ...addedExpense, id };
+    props.onAddedExpense(expenseData);
   };
   return (
     <div className="new-expense">
